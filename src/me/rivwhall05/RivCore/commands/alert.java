@@ -25,25 +25,26 @@ public class alert
 			} else {
 				Player p = (Player) sender;
 				if (!p.hasPermission("rivcore.alert")) {
-					p.sendMessage(ChatColor.DARK_RED
+					p.sendMessage(ChatColor.RED
 							+ "You do not have access to that command!");
 
 				} else if (args.length == 0) {
-					p.sendMessage(ChatColor.DARK_RED + "You need to type in a message!");
+					p.sendMessage(ChatColor.RED + "You need to type in a message!");
 				} else {
-					Bukkit.broadcastMessage(ChatColor.GREEN + "[Broadcast] " + ChatColor.WHITE + p.getName() + ": " + message(args));
+					Bukkit.broadcastMessage(ChatColor.RED + "PumpkinFreedom: "+ ChatColor.GREEN message(args));
 				}
 
 			}
 		}
 		return false;
 	}
+		}
+		return builder.toString().trim();
+	}
+}
+
 	public String message(String[] args) {
 		StringBuilder builder = new StringBuilder();
 		for (int i = 0; i < args.length; i++) {
 		builder.append(args[i]);
 		builder.append(" ");
-		}
-		return builder.toString().trim();
-	}
-}
