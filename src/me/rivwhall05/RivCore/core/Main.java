@@ -2,6 +2,7 @@ package me.rivwhall05.RivCore.core;
 
 import java.util.logging.Logger;
 
+import me.rivwhall05.RivCore.commands.alert;
 import me.rivwhall05.RivCore.commands.dogelover;
 import me.rivwhall05.RivCore.commands.lol;
 import me.rivwhall05.RivCore.commands.rainbow;
@@ -26,6 +27,7 @@ public class Main
     getCommand("lol").setExecutor(new lol());;
     getCommand("rainbow").setExecutor(new rainbow());;
     getCommand("lovedoge").setExecutor(new dogelover());;
+    getCommand("alert").setExecutor(new alert());;
   }
   
   public void onDisable()
