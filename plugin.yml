@@ -1,0 +1,14 @@
+name: RivCore
+main: me.rivwhall05.RivCore.core.Main
+author: rivwhall05
+version: 1.0
+description: RivCore - A bunch of commands.
+commands:
+   say:
+      description: SAY IS BLOCKED
+   lol:
+      description: Lol
+   rainbow:
+      description: Its a rainbow YAAAY
+   lovedoge:
+      description: Awww its sooo cute!
