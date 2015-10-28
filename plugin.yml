@@ -12,3 +12,8 @@ commands:
       description: Its a rainbow YAAAY
    lovedoge:
       description: Awww its sooo cute!
+    alert:
+       description: Alert
+       usage: /alert <message>
+       permission: rivcore.alert
+       permission-message: You cannot do an alert!
